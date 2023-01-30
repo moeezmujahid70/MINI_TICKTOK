@@ -1,0 +1,28 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "*"
+uvicorn = {extras = ["standard"], version = "*"}
+schedule = "*"
+python-dotenv = "*"
+requests = "*"
+jinja2 = "*"
+pymongo = "*"
+b2sdk = "*"
+firebase-admin = "*"
+python-jose = {extras = ["cryptography"], version = "*"}
+passlib = {extras = ["bcrypt"], version = "*"}
+python-multipart = "*"
+email-validator = "*"
+bumpversion = "*"
+bugsnag = "*"
+emoji = "*"
+
+[dev-packages]
+autopep8 = "*"
+
+[requires]
+python_version = "3.8"
