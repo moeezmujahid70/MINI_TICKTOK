@@ -174,6 +174,6 @@ async def create_post(request: CreatePostRequest, user: User = Depends(get_curre
     return post
 
 # Note I know the goal was to to upload the video and metadata at the same request but
-# I have separated the request for uploading video which will return the url
+# to upload video and get there url to be appended in feed post apis i have created separate api under routes/videos
 # the url which can be used to append in the feed post requests
-# this makes the implementation alot cleaner and smooth although the video upload api can be appended here to achieve the intended goal
+# although the video upload api can be appended here to achieve the intended goal but this approch in my opnion make the this makes the implementation alot cleaner and smooth
